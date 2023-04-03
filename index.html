@@ -8,7 +8,76 @@
     <title>Form Validation</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <!-- Form title  -->
+      <h1>Create Your Access</h1>
+      <!-- form  -->
+      <form class="form" id="form">
+        <!-- full name  -->
+        <div class="formgrop">
+          <label for="fullname"> Full Name </label>
+          <input
+            id="fullname"
+            type="text"
+            placeholder="Your Full Name"
+            required
+          />
+        </div>
+        <!-- phone number  -->
+        <div class="formgrop">
+          <label for="phoneNumber"> Phone Number</label>
+          <input
+            id="phoneNumber"
+            type="tel"
+            placeholder="+8801312345678"
+            required
+          />
+        </div>
+
+        <!-- Email Address  -->
+        <div class="formgrop">
+          <label for="emailAdd"> Email Address </label>
+          <input
+            id="emailAdd"
+            type="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+
+        <!-- Web Url   -->
+        <div class="formgrop">
+          <label for="webUrl"> Web Url </label>
+          <input
+            id="webUrl"
+            type="url"
+            placeholder="https://example.com"
+            required
+          />
+        </div>
+
+        <!-- password   -->
+        <div class="formgrop">
+          <label for="pass"> Password </label>
+          <input id="pass" type="password" placeholder="Password" required />
+        </div>
+        <!-- confirm password   -->
+        <div class="formgrop">
+          <label for="conpass"> Confirm Password </label>
+          <input
+            id="conpass"
+            type="password"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <button type="submit">Create Access</button>
+      </form>
+      <!-- error / success message  -->
+      <div class="message-container">
+        <h3>Wellcome</h3>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
