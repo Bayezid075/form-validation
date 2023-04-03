@@ -59,7 +59,14 @@
         <!-- password   -->
         <div class="formgrop">
           <label for="pass"> Password </label>
-          <input id="pass" type="password" placeholder="Password" required />
+          <input
+            id="pass"
+            type="password"
+            placeholder="Password (Min 8 Digit)"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Please Include 1 Uppercase Letter , 1 Lowercase Letter And Number"
+          />
         </div>
         <!-- confirm password   -->
         <div class="formgrop">
@@ -69,6 +76,7 @@
             type="password"
             placeholder="Confirm Password"
             required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
         </div>
         <button type="submit">Create Access</button>
